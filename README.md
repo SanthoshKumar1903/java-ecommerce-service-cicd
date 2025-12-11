@@ -4,7 +4,7 @@ A production-ready Spring Boot microservice featuring a **complete CI/CD pipelin
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements an automated CI/CD pipeline for a Spring Boot e-commerce service that triggers on every main branch commit. The pipeline automates testing, security analysis, Docker containerization, registry management, and deployment to EC2 with zero manual intervention required.
 
@@ -12,7 +12,7 @@ This project implements an automated CI/CD pipeline for a Spring Boot e-commerce
 
 ---
 
-## 🏗️ Pipeline Architecture
+## Pipeline Architecture
 
 ```
 GitHub Commit (main) → Code Quality Scan → Build Docker Image → Push to ECR → Deploy to EC2
@@ -28,7 +28,7 @@ GitHub Commit (main) → Code Quality Scan → Build Docker Image → Push to EC
 
 ---
 
-## 🔧 Technologies & Stack
+## Technologies & Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
@@ -45,7 +45,7 @@ GitHub Commit (main) → Code Quality Scan → Build Docker Image → Push to EC
 
 ---
 
-## 📊 GitHub Actions Workflow Breakdown
+## GitHub Actions Workflow Breakdown
 
 ### Automated Pipeline Steps (Triggered on Main Branch Push)
 
@@ -94,19 +94,19 @@ Workflow: Java CI/CD with Docker
 
 ---
 
-## ✅ Proof of Work
+## Proof of Work
 
 ### 1. GitHub Actions Build Pipeline Success
 ![CI/CD Pipeline Build Success](images/build-done.png)
 
 **Execution Evidence:**
-- ✅ Code checkout successful
-- ✅ JDK 17 configured
-- ✅ SonarCloud analysis completed
-- ✅ Docker image built and pushed to ECR
-- ✅ EC2 deployment executed via SSH
-- ✅ **Total execution time:** 10 minutes 2 seconds
-- ✅ **Status:** Fully automated, zero failures
+- Code checkout successful
+- JDK 17 configured
+- SonarCloud analysis completed
+- Docker image built and pushed to ECR
+- EC2 deployment executed via SSH
+- **Total execution time:** 10 minutes 2 seconds
+- **Status:** Fully automated, zero failures
 
 This screenshot shows the complete GitHub Actions workflow running all 7 steps successfully without any manual intervention.
 
@@ -116,7 +116,7 @@ This screenshot shows the complete GitHub Actions workflow running all 7 steps s
 ![SonarCloud Code Quality Results](images/sonarcube.png)
 
 **Code Quality Gate Results:**
-- **Status:** ✅ PASSED (Sonar way Quality Gate)
+- **Status:** PASSED (Sonar way Quality Gate)
 - **Lines of Code:** 176 lines
 - **Version:** 0.0.1-SNAPSHOT
 - **New Issues:** 0 detected
@@ -144,7 +144,7 @@ This screenshot shows the complete GitHub Actions workflow running all 7 steps s
 
 ---
 
-## 🚀 Key Features & Implementation Details
+## Key Features & Implementation Details
 
 ### Full Automation
 - **Event-Driven:** Pipeline triggers automatically on every main branch commit
@@ -172,7 +172,7 @@ This screenshot shows the complete GitHub Actions workflow running all 7 steps s
 
 ---
 
-## 📋 Workflow Configuration Details
+## Workflow Configuration Details
 
 ### Pipeline Trigger
 ```yaml
@@ -211,7 +211,7 @@ Registry/Repository:Tag = ECR_REGISTRY/java/ecommerce-service:latest
 
 ---
 
-## 🎓 Technical Skills Demonstrated
+## Technical Skills Demonstrated
 
 ### DevOps & Infrastructure
 1. **GitHub Actions:** Workflow automation, secret management, environment variables
